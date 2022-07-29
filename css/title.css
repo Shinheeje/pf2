@@ -1,0 +1,163 @@
+#title {
+  height: 100%;
+  background-image:url(../img/section01_bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 700px;
+  position: relative;
+  padding-left: 250px;
+  }
+  #title::before{
+    content:"";
+    background-image: url(../img/sec01_logo.png);
+    background-size: cover;
+    width: 1508px;
+    height: 388px;
+    height: 388px;
+    margin-top: 60px;
+    margin-bottom: 35px;
+    animation-name: fadeIn; /*애니메이션 이름*/
+    animation-duration: 2s;  /*애니메이션 시간*/
+    /*! animation-iteration-count: 3; */ /*애니메이션 반복횟수*/
+    /*! animation-direction: alternate; */ /*애니메이션 진행방향:왔다갔다.*/
+}
+
+@keyframes fadeIn{
+  0%{ /*처음상태*/
+    opacity:0;
+    transform:scale(0.7);
+  }
+  70%{
+    transform:scale(1.2);
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+  #title form.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 920px;
+    height: 80px;
+    box-shadow: 0px 5px 24.3px 2.7px rgba(0,0,0,0.09);
+    border-radius: 40px;
+    padding-left: 50px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    animation-name: moveLeft;
+    animation-duration: 1s;
+    transform: translateX(70px);
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    animation-iteration-count: 3;
+  }
+@keyframes moveLeft{
+ 0%{
+   transform: translateX(70px);
+  }
+ 100%{
+    transform: translateX(0px);
+  }
+}
+  #title form.search::before{
+     content: "";
+    background-image: url(../img/search_icon.png);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    margin-right: 10px;
+  }
+
+  #title form.search input {
+    width: 78%;
+    height: 90%;
+    font-size: 17px;
+    border:none;
+    
+  }
+  #title form.search input:focus{  /* */
+  outline: none;
+}
+  #title form.search button {
+    width: 22%;
+    height: 55px;
+    border:none;
+    border-radius: 27.5px;
+    background-color: #e63229;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    
+    
+  }
+  #title h2 {
+    
+  }
+  #title ul.hash {
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    column-gap: 40px;
+  }
+  #title ul.hash li {
+    border: 1px solid #edecef;
+    width:120px;
+    height: 20px;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 3px;
+    border-radius: 40px;
+    font-size: 12px;
+    
+  }
+  #title ul.hash li a {
+   
+  }
+  #title ul.hash li a:hover {
+    color:yellow;
+  }
+
+#title span{
+  position: absolute;
+  bottom: 20px;
+}
+#title span::before{
+  content:"";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border: 2px solid;
+  border-top : transparent;
+  border-left : transparent;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  margin-bottom: 10px;
+  animation-name: upDown;
+  animation-direction: alternate;
+  animation-duration: 0.6s;
+  animation-iteration-count: infinite;
+/*   animation-fill-mode: forwards; */
+}
+@keyframes upDown{
+  0%{
+  transform: translateY(0px)/*translateX(-50px)*/  rotate(45deg);
+  }
+  100%{
+  transform: translateY(-15px) rotate(45deg);
+  }
+  
+}
+#title span::after{
+  content:"Scroll";
+  
+ }

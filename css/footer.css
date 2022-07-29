@@ -1,0 +1,119 @@
+footer {
+  background-color: black;
+  }
+  footer .inner {
+  height: 380px;
+  color: white;
+}
+footer .inner a{
+  color: white;
+}
+.left {
+   
+  }
+  footer .inner .left h1 {
+    width: 113px;
+    height: 30px;
+    font-size: 0px;
+    background-image: url(../img/f_logo.png);
+    
+  }
+  footer .inner .left h1 a {
+    
+  }
+  footer .inner .left address {
+   transform: translateY(-90px);
+   color: #bbbbbb;
+  }
+  footer .inner .left p.copyright {
+  color: #bbbbbb;
+  }
+  footer .inner .right {
+    width: 780px;
+    height: 380px;
+    align-items: flex-end;
+    
+  }
+  footer .inner .right ul.personal {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    
+  }
+  footer .inner .right ul.personal li {
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer .inner .right ul.personal li a {
+   color: #bbbbbb;
+  }
+  footer .inner .right .bottom {
+    width: 700px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  footer .inner .right .bottom ul.sns {
+    width: 240px;
+    height: 70px;
+    justify-content: space-evenly;
+  }
+  footer .inner .right .bottom ul.sns li {
+    width: 70px;
+    height: 70px;
+    gap: 10px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1b1b1b;
+    
+  }    
+  footer .inner .right .bottom ul.sns li a{
+    display: inline-block;
+    width: 19px;
+    height: 19px;
+    font-size: 10px;
+    
+    
+  }
+footer .inner .right .bottom ul.sns li:nth-child(1) a{
+  background-image: url(../img/footer_sns01.png);
+  font-size: 0px;
+}
+footer .inner .right .bottom ul.sns li:nth-child(2) a{
+  background-image: url(../img/footer_sns02.png);
+  font-size: 0px;
+  background-repeat: no-repeat;
+   width: 20px;
+  height: 14px;
+}
+footer .inner .right .bottom ul.sns li:nth-child(3) a{
+  background-image: url(../img/footer_sns03.png);
+  font-size: 0px;
+  background-size: contain;
+  width: 37px;
+  height: 20px;
+}
+  footer .inner .right .bottom > a {
+    width: 375px;
+    height: 70px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #1b1b1b;
+     border-radius: 50px;
+  }
+footer .inner .right .bottom > a span{
+   color: #bbbbbb;
+}
+
+  footer .inner .right .bottom > a::before{
+  content:"";
+    background-image: url(../img/flag_store.png);
+    width: 64px;
+    height: 50px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 13px;
+    
+  }
